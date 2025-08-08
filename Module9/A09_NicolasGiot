@@ -1,0 +1,37 @@
+Autonomous agents are intelligent systems that can make decisions and take actions without human intervention. In the context of Industry 4.0—which emphasizes 
+smart factories, automation, and interconnected systems—autonomous agents play a critical role in enabling real-time decision-making, self-optimization, and 
+improved efficiency. This case study by Leo Hjulström explores how reinforcement learning (RL), a subfield of machine learning, can be used to create autonomous 
+agents that control automated guided vehicles (AGVs) in a manufacturing environment.
+
+The study focuses on implementing reinforcement learning to train autonomous agents for AGV coordination. These agents learn optimal routing behavior in a 
+simulated factory floor by receiving rewards or penalties based on their actions. The simulation environment is designed to reflect realistic industrial settings, 
+allowing the agent to gradually learn which routes minimize delays, avoid collisions, and ensure timely delivery of materials. The agent uses the Q-learning 
+algorithm, a basic but effective form of RL, to update its strategy over time. Importantly, the system is decentralized—each AGV makes decisions independently, 
+increasing flexibility and reducing the need for centralized control.
+
+The results showed several clear benefits. First, the use of autonomous agents significantly improved efficiency by reducing delays and congestion on the factory 
+floor. The self-learning aspect of RL allowed the agents to adapt to dynamic environments, such as changing traffic or task loads. The decentralized approach also 
+meant the system was more scalable and resilient to disruptions, since there was no single point of failure.
+
+However, the study also highlighted a few challenges. Training the agents took time and computational resources, especially in more complex environments. 
+Additionally, because the agents learned through trial and error, there were initial inefficiencies and occasional suboptimal decisions. The study also noted the 
+need for reliable communication between agents and the environment to maintain performance.
+
+Looking ahead, the use of autonomous agents in Industry 4.0 has great promise. As reinforcement learning techniques grow more sophisticated, these systems can 
+become even more efficient, reliable, and adaptable. Future developments could include real-world deployment of multi-agent systems, integration with IoT sensors, 
+and further use in logistics, warehousing, and production lines.
+
+
+
+Reflection:
+Reading this article helped me connect concepts I was already familiar with—like how companies such as NVIDIA use virtual environments to train robots—with more 
+specific applications in industrial automation. I had heard of autonomous systems before, but I didn’t fully understand how AGVs (automated guided vehicles) 
+worked or how they could independently navigate factory floors. This study introduced me to the idea that each AGV could operate as its own agent using 
+reinforcement learning, specifically the Q-learning algorithm. I now understand that Q-learning allows agents to learn optimal actions over time by trial and 
+error, adjusting based on rewards (reinforcement learning).
+
+What stood out most was the decentralized structure, which I hadn’t considered before. Instead of relying on a central controller, each agent makes its own 
+decisions, which improves scalability and resilience. I also appreciated the more niche benefits—like reduced traffic bottlenecks, faster adaptation to dynamic 
+environments, and the ability to scale up without performance loss. This structure feels like a critical stepping stone for future factories and smart logistics 
+systems.
+
