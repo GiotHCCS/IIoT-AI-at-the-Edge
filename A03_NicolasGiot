@@ -1,0 +1,32 @@
+Introduction:
+The Liverpool Smart Pedestrians Project was a project to use existing systems (CCTV) in order to develop an effective real time monitoring system dedicated to 
+combat congestion issues that had been growing. The goal was to use edge computing and AI in order to create an effective yet inexpensive way to monitor pedestrian 
+traffic and develop better urban planning systems. 
+
+Method:
+Beginning with community workshops, the project looked to make use of multi modal tracking, privacy compliance, infrastructure reuse, and scalability. They also 
+wanted to use low cost sensors that would still serve as a viable source of data. 
+
+Technology:
+For the hardware, they settled on the NVIDIA Jetson TX2 (GPU accelerated computing), LoPy 4 module (for LoRaWAN, connectivity), and IP67 casing (weatherproof). On 
+the software end, they made use of YOLO v3 (object detection library/models), SORT (real time multi object tracking), and pytorch 1.1. The goal was to do all 
+processing on edge devices, where anonymized metadata would later be sent to central data servers. 
+
+Performance:
+Using both the Oxford Town Center Dataset and real-time feeds from Liverpool, the project system marked down an accuracy of ~70% with a median error of ~33% with a 
+framerate of about 20 fps. There were issues with recognition in groups of crowds, and with SORT being built around the CPU, it didn’t fully make use of GPU 
+resources making it slower. Generally thought, this was a great MVP for the time.
+
+Applications:
+While this was good for the time, there have been many improvements to hardware, software, anad methodology since 2019. In hardware, you could easily get more 
+power from the newer Jetson nano. Software, you can use a more recent version of YOLO like v7 or v8 (though they are more demanding.) There is also a lot more GPU 
+support for different tools now and so you could replace the CPU intensive SORT algorithm with newer algorithms like BYTETrack. These and taking better advantage of 
+faster connections with things like 5-6g would greatly improve the project's baseline and make it far more viable for more use cases like vehicular traffic control. 
+
+What I believe this project provides is the proof of concept of a new application of AI, and serves as the foundation that others can use when better technology 
+gets developed. We can easily use this to determine not only things like when foot traffic is increased, to then make changes to light systems for ease of travel, 
+but also adapt it to control traffic lights so people might wait less at lights. Overall, while the premise is simple, the technology behind it is far from that, 
+and this project proved a vital use case and laid the foundation for smarter cities. 
+
+Abewly, SORT, (2015), GitHub Repository, https://github.com/abewley/sort
+ifzhang, BYTETrack, (2021), GitHub Repository, https://github.com/FoundationVision/ByteTrack
