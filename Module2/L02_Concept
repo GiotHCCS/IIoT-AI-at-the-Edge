@@ -1,0 +1,7 @@
+1. MNIST Data Loading and Visualization
+Purpose:
+ Load the MNIST handwritten digit dataset, normalize the image data, and visually display sample images.
+What it does:
+Loads training and testing data from tensorflow.keras.datasets.mnist.
+Scales pixel values to a range of 0–1 for neural network compatibility.
+Uses matplotlib to plot the first 9 images from the training set.
