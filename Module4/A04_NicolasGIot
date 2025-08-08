@@ -1,0 +1,15 @@
+This project focused on simulating IIoT sensor data using MQTT, CoAP, and OPC UA, and visualizing it in real time. My personal goal was to build a working 
+multi-protocol simulation and gain experience using GitHub Desktop and Python outside of a notebook environment.
+
+I was responsible for implementing the MQTT sensor simulation, setting up the visualization script, and ensuring the data pipeline worked in real time. I also 
+wrote the final report sections, created the visual output, and handled uploading everything through GitHub Desktop.
+
+I learned how MQTT works and how it compares to CoAP and OPC UA, especially in terms of reliability and ease of use. This was also my first time structuring a 
+multi-file Python project in a virtual environment and managing it with GitHub Desktop instead of using Jupyter.
+
+I initially struggled to set up my GitHub Student account and later faced errors while installing and using libraries like aiocoap and asyncua. I overcame these 
+by focusing on getting MQTT fully functional and tweaking the visualization script to run without threading errors.
+
+The knowledge I gained about protocols, library debugging, and project structuring will be useful for future IoT, data visualization, or automation projects. If 
+I return to this project, I’d improve it by adding proper CoAP/OPC UA support, and possibly containerizing the entire setup for easier deployment.
+
